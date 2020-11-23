@@ -11,7 +11,7 @@ import MyMath
 
 func main() -> Int32
 {
-    print("Well, let's begin")
+    print("Well, let's begin!!!")
 
     print(MyMath.squareRoot(a:1.0, b:2.0, c:3.0))
 
