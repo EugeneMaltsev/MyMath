@@ -11,10 +11,10 @@ import MyMath
 
 func main() -> Int32
 {
-    print("Well, let's begin!!!")
-
-    print(MyMath.squareRoot(a:1.0, b:2.0, c:3.0))
-
+//    print(MyMath.squareRoot(a:7, b:10.0, c:2.0))
+//    print(MyMath.squareRoot(a: 1, b: -6, c: 9))
+    print(MyMath.squareRoot(a: 5, b: 3, c: 7))
+    
     return 0
 }
 

@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B395A0256D6537005440EE /* MyMath_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B3959F256D6537005440EE /* MyMath_Tests.swift */; };
+		35B395A2256D6537005440EE /* libMyMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FE9E3825659DFB00229E53 /* libMyMath.a */; };
 		35FADAFA2567215B0072A932 /* libMyMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FE9E3825659DFB00229E53 /* libMyMath.a */; };
 		C5FE9E2E256599AE00229E53 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9E2D256599AE00229E53 /* main.swift */; };
 		C5FE9E3D25659DFC00229E53 /* MyMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FE9E3C25659DFC00229E53 /* MyMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		35B395A3256D6537005440EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5FE9E22256599AD00229E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5FE9E3725659DFB00229E53;
+			remoteInfo = MyMath;
+		};
 		35FADAF325671D890072A932 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5FE9E22256599AD00229E53 /* Project object */;
@@ -35,6 +44,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		35B3959D256D6536005440EE /* MyMath_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMath_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35B3959F256D6537005440EE /* MyMath_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMath_Tests.swift; sourceTree = "<group>"; };
+		35B395A1256D6537005440EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FE9E2A256599AE00229E53 /* Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FE9E2D256599AE00229E53 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C5FE9E3825659DFB00229E53 /* libMyMath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyMath.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +54,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		35B3959A256D6536005440EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B395A2256D6537005440EE /* libMyMath.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5FE9E27256599AD00229E53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B3959E256D6537005440EE /* MyMath_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				35B3959F256D6537005440EE /* MyMath_Tests.swift */,
+				35B395A1256D6537005440EE /* Info.plist */,
+			);
+			path = MyMath_Tests;
+			sourceTree = "<group>";
+		};
 		35FADAF92567215B0072A932 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +101,7 @@
 			children = (
 				C5FE9E2C256599AE00229E53 /* Lab1 */,
 				C5FE9E3925659DFC00229E53 /* MyMath */,
+				35B3959E256D6537005440EE /* MyMath_Tests */,
 				C5FE9E2B256599AE00229E53 /* Products */,
 				35FADAF92567215B0072A932 /* Frameworks */,
 			);
@@ -82,6 +112,7 @@
 			children = (
 				C5FE9E2A256599AE00229E53 /* Lab1 */,
 				C5FE9E3825659DFB00229E53 /* libMyMath.a */,
+				35B3959D256D6536005440EE /* MyMath_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +146,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		35B3959C256D6536005440EE /* MyMath_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35B395A5256D6537005440EE /* Build configuration list for PBXNativeTarget "MyMath_Tests" */;
+			buildPhases = (
+				35B39599256D6536005440EE /* Sources */,
+				35B3959A256D6536005440EE /* Frameworks */,
+				35B3959B256D6536005440EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35B395A4256D6537005440EE /* PBXTargetDependency */,
+			);
+			name = MyMath_Tests;
+			productName = MyMath_Tests;
+			productReference = 35B3959D256D6536005440EE /* MyMath_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C5FE9E29256599AD00229E53 /* Lab1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5FE9E31256599AE00229E53 /* Build configuration list for PBXNativeTarget "Lab1" */;
@@ -159,10 +208,13 @@
 				KnownAssetTags = (
 					New,
 				);
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Roman Falchuk";
 				TargetAttributes = {
+					35B3959C256D6536005440EE = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					C5FE9E29256599AD00229E53 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -186,11 +238,30 @@
 			targets = (
 				C5FE9E3725659DFB00229E53 /* MyMath */,
 				C5FE9E29256599AD00229E53 /* Lab1 */,
+				35B3959C256D6536005440EE /* MyMath_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		35B3959B256D6536005440EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		35B39599256D6536005440EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35B395A0256D6537005440EE /* MyMath_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5FE9E26256599AD00229E53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +281,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		35B395A4256D6537005440EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5FE9E3725659DFB00229E53 /* MyMath */;
+			targetProxy = 35B395A3256D6537005440EE /* PBXContainerItemProxy */;
+		};
 		35FADAF425671D890072A932 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C5FE9E3725659DFB00229E53 /* MyMath */;
@@ -218,6 +294,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		35B395A6256D6537005440EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D786ACT9SA;
+				INFOPLIST_FILE = MyMath_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "EugeneMaltsev.MyMath-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		35B395A7256D6537005440EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D786ACT9SA;
+				INFOPLIST_FILE = MyMath_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "EugeneMaltsev.MyMath-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		C5FE9E2F256599AE00229E53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,6 +490,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		35B395A5256D6537005440EE /* Build configuration list for PBXNativeTarget "MyMath_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35B395A6256D6537005440EE /* Debug */,
+				35B395A7256D6537005440EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5FE9E25256599AD00229E53 /* Build configuration list for PBXProject "Lab1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
