@@ -7,34 +7,35 @@
 //
 
 import Foundation
-
-public func squareRoot(a: Double, b: Double, c: Double) -> (Double?, Double?)
+// Zero
+// ABC
+// Raise
+public func squareRoot(a: Double, b: Double, c: Double) -> Array<Double>
 {
-    
+
     let Discriminant: Double = b * b - 4 * a * c
-    
+
     if Discriminant > 0
     {
         let d = Discriminant.squareRoot()
         let x1: Double = (-b + d) / (2 * a)
         let x2: Double = (-b - d) / (2 * a)
-        
+
         if x1 < x2
         {
-            return (x1, x2)
+            return [x1, x2]
         }else{
-            return (x2, x1)
+            return [x2, x1]
         }
     }
     else if Discriminant == 0
     {
         let x = -b / (2 * a)
-        return (x,nil)
+        return [x]
     }else{
-        return (nil,nil)
+        return []
     }
 }
-
 
 
  /*

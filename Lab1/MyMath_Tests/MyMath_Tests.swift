@@ -15,25 +15,23 @@ class MyMath_Tests: XCTestCase {
     {
         let roots = squareRoot(a: 1,b: -6,c: 9)
         
-        XCTAssertEqual(roots.0, 3.0)
-        XCTAssertEqual(roots.1, nil)
+        XCTAssertEqual(roots.count, 1)
+        XCTAssertEqual(roots[0], 3.0)
     }
     
     func testTwoRoots()
     {
         let roots = squareRoot(a: 1, b: -10, c: 21)
         
-        XCTAssertEqual(roots.0, 3.0)
-        XCTAssertEqual(roots.1, 7.0)
+        XCTAssertEqual(roots.count, 2)
+        XCTAssertEqual(roots[0], 3.0)
+        XCTAssertEqual(roots[1], 7.0)
     }
     
     func testNoRoots()
     {
         let roots = squareRoot(a: 5, b: 3, c: 7)
-        
-        XCTAssertEqual(roots.0, nil)
-        XCTAssertEqual(roots.1, nil)
-        
+        XCTAssertEqual(roots.count, 0)
     }
     
     func testABC()
