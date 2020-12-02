@@ -11,31 +11,55 @@ import XCTest
 
 class MyMath_Tests: XCTestCase {
     
-    func testOneRoot()
-    {
-        let roots = squareRoot(a: 1,b: -6,c: 9)
-        
-        XCTAssertEqual(roots.count, 1)
-        XCTAssertEqual(roots[0], 3.0)
+//    func testOneRoot()
+//    {
+//        do{
+//            let roots = try squareRoot(a: 0,b: -6,c: 9)
+//
+//            XCTAssertEqual(roots.count, 1)
+//            XCTAssertEqual(roots[0], 3.0)
+//
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//
+//    }
+//
+    func testOneRoot() throws {
+        let result = try squareRoot(a: 0, b: -6, c: 9)
+        XCTAssertThrowsError(result)
     }
+    
     
     func testTwoRoots()
     {
-        let roots = squareRoot(a: 1, b: -10, c: 21)
-        
-        XCTAssertEqual(roots.count, 2)
-        XCTAssertEqual(roots[0], 3.0)
-        XCTAssertEqual(roots[1], 7.0)
+        do{
+            let roots = try squareRoot(a: 1, b: -10, c: 21)
+            
+            XCTAssertEqual(roots.count, 2)
+            XCTAssertEqual(roots[0], 3.0)
+            XCTAssertEqual(roots[1], 7.0)
+    
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     func testNoRoots()
     {
-        let roots = squareRoot(a: 5, b: 3, c: 7)
-        XCTAssertEqual(roots.count, 0)
+        do{
+            
+        
+            let roots = try squareRoot(a: 5, b: 3, c: 7)
+        
+            XCTAssertEqual(roots.count, 0)
+    
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
-    func testABC()
-    {
+    func testABC() throws {
         
     }
 }

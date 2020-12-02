@@ -10,9 +10,24 @@ import Foundation
 // Zero
 // ABC
 // Raise
-public func squareRoot(a: Double, b: Double, c: Double) -> Array<Double>
-{
+// Void type argument
 
+public func squareRoot(a: Double, b: Double, c: Double) throws -> Array<Double>
+{
+    enum SynError: Error {
+        case ABCError(String)
+        case ZeroError(String)
+    }
+    
+    guard a != 0 else {
+        throw SynError.ZeroError("Bad Validate")
+    }
+    
+    
+    
+    
+    
+    
     let Discriminant: Double = b * b - 4 * a * c
 
     if Discriminant > 0
