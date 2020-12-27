@@ -14,7 +14,7 @@ public enum AllError: Error {
 }
 
 public func quadraticEquation(a: Double, b: Double, c: Double) throws -> Array<Double> {
-        
+    
     guard a != 0 else {throw AllError.ZeroError}
 
     let Discriminant: Double = b * b - 4 * a * c
@@ -28,15 +28,13 @@ public func quadraticEquation(a: Double, b: Double, c: Double) throws -> Array<D
         if x1 < x2
         {
             return [x1, x2]
-        }else{
+        } else {
             return [x2, x1]
         }
-    }
-    else if Discriminant == 0
-    {
+    } else if Discriminant == 0 {
         let x = -b / (2 * a)
         return [x]
-    }else{
+    } else {
         return []
     }
 }

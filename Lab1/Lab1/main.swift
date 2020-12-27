@@ -10,19 +10,20 @@
 import Foundation
 import MyMath
 
-func main() -> Int32{
+
+public func main() -> Int32{
     
     do{
-        try print(MyMath.quadraticEquation(a: 0, b: -6, c: 9))
+        try print(MyMath.quadraticEquation(a: 1, b: -6, c: 9))
     } catch AllError.ZeroError{
         print(AllError.ZeroError)
-    } catch AllError.ABCError{
-        print(AllError.ABCError)
     } catch {
-        print("something else")
+        print("Something else")
     }
     
     return 0
     
 }
+
 exit(main())
+
